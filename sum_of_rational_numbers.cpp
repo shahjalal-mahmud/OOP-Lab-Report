@@ -5,7 +5,8 @@ Write a class for rational number (p/q) with overloading + and << operator.
 #include <iostream>
 using namespace std;
 
-class Rational {
+class Rational
+{
 private:
     int numerator;
     int denominator;
@@ -15,7 +16,8 @@ public:
     Rational(int n, int d) : numerator(n), denominator(d) {}
 
     // Overload + operator
-    Rational operator+(const Rational& x) const {
+    Rational operator+(const Rational &x) const
+    {
         Rational temp;
         temp.numerator = numerator * x.denominator + x.numerator * denominator;
         temp.denominator = denominator * x.denominator;
@@ -23,13 +25,18 @@ public:
     }
 
     // Overload << operator for easy output
-    friend ostream& operator<<(ostream& os, const Rational& r) {
+    friend ostream &operator<<(ostream &os, const Rational &r)
+    {
         os << r.numerator << "/" << r.denominator;
         return os;
     }
 };
 
-int main() {
+int main()
+{
+    cout << "Name: Md Shahajalal Mahmud" << endl
+         << "ID: 1539" << endl;
+
     Rational r1(1, 2);
     Rational r2(3, 4);
 
