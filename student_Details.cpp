@@ -1,3 +1,8 @@
+/*
+Write a class for student with Roll, Name and marks on 3 subject
+and functions for total marl and grade and required methods.
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
