@@ -44,8 +44,13 @@ int main()
 
     C3 = C1 + C2;
 
+    cout<<"C1 = ";
     C1.display();
+
+    cout<<"C2 = ";
     C2.display();
+
+    cout<<"C3 = C1 + C2 = ";
     C3.display();
 
     return 0;
